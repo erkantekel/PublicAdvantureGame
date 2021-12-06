@@ -4,11 +4,13 @@ public abstract class GameChar {
 	private int damage;
 	private int health;
 	private int coin;
+	private int block;
 	
-	public GameChar(int id, String name, int damage, int health, int coin) {
+	public GameChar(int id, String name,int block, int damage, int health, int coin) {
 		this.id = id;
 		this.name = name;
 		this.damage = damage;
+		this.block = block;
 		this.health = health;
 		this.coin = coin;
 	}
@@ -46,6 +48,14 @@ public abstract class GameChar {
 	}
 	public void setCoin(int coin) {
 		this.coin = coin;
+	}
+
+	public int getBlock() {
+		return block;
+	}
+
+	public void setBlock(int block) {
+		this.block = block;
 	}
 	
 }
